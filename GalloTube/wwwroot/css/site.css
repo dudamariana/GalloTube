@@ -79,11 +79,12 @@ a {
   white-space: nowrap;
   line-height: 60px;
 }
-
-.swal2-popup {
-  background: var(--bs-body-bg) !important;
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100vh;
 }
 
-.swal2-title, .swal2-content {
-  color: var(--bs-body-color) !important;
+body {
+  min-width: 100vh;
 }

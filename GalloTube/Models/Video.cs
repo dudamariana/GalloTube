@@ -41,6 +41,10 @@ public class Video
         return TimeSpan.FromMinutes(Duration) .ToString(@"%h'h 'mm'min'");
     }}
 
+    [NotMapped]
+    [Display(Name = "Classificação Etária")]
+   
+
     public ICollection<VideoTag> Tags { get; set; }
 
 }
