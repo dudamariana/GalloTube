@@ -11,14 +11,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GalloTube.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230822132634_criando-banco")]
+    [Migration("20230824140752_criando-banco")]
     partial class criandobanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.16")
+                .HasAnnotation("ProductVersion", "6.0.20")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("GalloTube.Models.Tag", b =>
@@ -51,7 +51,7 @@ namespace GalloTube.Migrations
                     b.Property<short>("Duration")
                         .HasColumnType("smallint");
 
-                    b.Property<string>("Image")
+                    b.Property<string>("Thumbnail")
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
 
@@ -117,22 +117,22 @@ namespace GalloTube.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "39e7821c-d81f-4058-bd13-bd6d703a09e1",
-                            ConcurrencyStamp = "93a11022-59a9-4fff-844d-b244dd4fa75d",
+                            Id = "e303c790-a928-42e0-bb81-9362b13b4264",
+                            ConcurrencyStamp = "c9e7dce7-d27d-4a1a-9a11-4b705d038af4",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "c1ef32c4-5999-4434-a3f2-aed7c2ef0925",
-                            ConcurrencyStamp = "b4c50fd2-88d6-42d8-8245-033a7fe54242",
+                            Id = "3e528658-a6fd-4d19-905b-abf6020956e0",
+                            ConcurrencyStamp = "2d359d80-7b67-4ebb-8fc7-5d3adb7f25fd",
                             Name = "Moderador",
                             NormalizedName = "MODERADOR"
                         },
                         new
                         {
-                            Id = "283f4118-c7ba-4983-9cde-ffc0d81b6ce6",
-                            ConcurrencyStamp = "cfee4292-3807-492c-bbbf-75a0043fcc4a",
+                            Id = "66584346-4672-4bf7-ab68-d5809eceb7dd",
+                            ConcurrencyStamp = "a269aabc-d3bd-4bd3-b4f9-ddd15634cf93",
                             Name = "Usuário",
                             NormalizedName = " USUÁRIO"
                         });
@@ -293,8 +293,8 @@ namespace GalloTube.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "f30e2dab-8860-4122-94f9-d356a66feb18",
-                            RoleId = "39e7821c-d81f-4058-bd13-bd6d703a09e1"
+                            UserId = "2c918f96-a005-456a-98b6-3cb054735f3f",
+                            RoleId = "e303c790-a928-42e0-bb81-9362b13b4264"
                         });
                 });
 
@@ -338,18 +338,18 @@ namespace GalloTube.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f30e2dab-8860-4122-94f9-d356a66feb18",
+                            Id = "2c918f96-a005-456a-98b6-3cb054735f3f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "437d00a8-d748-426a-9664-2f804a6244e4",
+                            ConcurrencyStamp = "a0565bfd-44d0-44a9-8774-87e9e41381af",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDJVZqnLsk2OQhPNhlzUU52bq3Yt2aUwWaW0nFNsPSRLePUOTjXAkeVc5UvNh4sGbA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBsiGg8gOr6UCY6D0CalZChE0P4izQWzPqu2ShcRp4VJ+7fKHyGJpId7uE8DGg6lHw==",
                             PhoneNumber = "14912345678",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "2470d721-bf3a-4797-80fd-25070bbc0608",
+                            SecurityStamp = "d1b39edf-f2c0-4003-90f6-364828a78d5a",
                             TwoFactorEnabled = false,
                             UserName = "Admin",
                             DateOfBirth = new DateTime(2005, 11, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),

@@ -29,21 +29,12 @@ public class Video
 
     [StringLength(200)]
     [Display(Name = "Thumbnail")]
-    public string Image { get; set; }
+    public string Thumbnail { get; set; }
 
     [Display(Name = "VideoFile")]
     [Required(ErrorMessage = "O VideoFile é obrigatório")]
     public string VideoFile { get; set; }
-
-    [NotMapped]
-    [Display(Name = "Duração")]
-    public string HourDuration { get {
-        return TimeSpan.FromMinutes(Duration) .ToString(@"%h'h 'mm'min'");
-    }}
-
-    [NotMapped]
-    [Display(Name = "Classificação Etária")]
-   
+  
 
     public ICollection<VideoTag> Tags { get; set; }
 
